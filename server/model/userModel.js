@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 
 const userSchema = new mongoose.Schema({
-    fname:{
+    fullname:{
         type: String,
         required: true
     },
@@ -22,7 +22,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    course:{
+    qualification:{
         type: String,
         required: true
     },
