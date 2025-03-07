@@ -7,8 +7,8 @@ import toast from 'react-hot-toast';
 const Edit = () => {
 
  const users = {
-    fname: "",
-    lname: "",
+    fullname: "",
+    mobileno: "",
     email: ""
  }
 
@@ -49,12 +49,12 @@ const Edit = () => {
         <h3>Update user</h3>
         <form className='addUserForm' onSubmit={submitForm}>
             <div className="inputGroup">
-                <label htmlFor="fname">First name</label>
-                <input type="text" value={user.fname} onChange={inputChangeHandler} id="fname" name="fname" autoComplete='off' placeholder='First name' />
+                <label htmlFor="fullname">First name</label>
+                <input type="text" value={user.fullname} onChange={inputChangeHandler} id="fname" name="fullname" autoComplete='off' placeholder='Full name' />
             </div>
             <div className="inputGroup">
                 <label htmlFor="lname">Last name</label>
-                <input type="text" value={user.lname} onChange={inputChangeHandler} id="lname" name="lname" autoComplete='off' placeholder='Last name' />
+                <input type="text" value={user.mobileno} onChange={inputChangeHandler} id="lname" name="mobileno" autoComplete='off' placeholder='Mobile Number' />
             </div>
             <div className="inputGroup">
                 <label htmlFor="email">Email</label>
