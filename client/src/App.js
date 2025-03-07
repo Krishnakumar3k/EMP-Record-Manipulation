@@ -3,8 +3,6 @@ import {RouterProvider, createBrowserRouter} from "react-router-dom";
 import User from './components/getuser/User';
 import Add from './components/adduser/Add';
 import Edit from './components/updateuser/Edit';
-import Login from './components/Auth/Login';
-import Register from './components/Auth/Register';
 
 function App() {
 
@@ -20,14 +18,6 @@ function App() {
     {
       path:"/edit/:id",
       element: <Edit/>,
-    },
-    {
-      path: "/register",
-      element: <Register />
-    },
-    {
-      path: "/login",
-      element: <Login />
     }
   ])
 
