@@ -53,19 +53,19 @@ const User = () => {
             users.map((user, index) => (
               <tr key={user._id}>
                 <td>{index + 1}</td>
-                <td>
+                {/* <td>
                   {user.image ? (
                     <img src={user.image} alt="Profile" width={50} height={50} style={{ borderRadius: "50%" }} />
                   ) : (
                     "No Image"
                   )}
-                </td>
-                <td>{user.fname}</td>
+                </td> */}
+                <td>{user.fullname}</td>
                 <td>{user.designation}</td>
                 <td>{user.email}</td>
                 <td>{user.mobileno}</td>
                 <td>{user.gender}</td>
-                <td>{user.course}</td>
+                <td>{user.qualification}</td>
                 <td className="actionButtons">
                   <button onClick={() => deleteUser(user._id)}>
                     <i className="fa-solid fa-trash"></i>

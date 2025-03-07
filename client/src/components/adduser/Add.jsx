@@ -57,20 +57,20 @@ const Add = () => {
 
         {/* First Name */}
         <div className="inputGroup">
-          <label htmlFor="fname">Full Name :</label>
-          <input type="text" id="fname" name="fname" autoComplete='off' placeholder='Full Name' onChange={inputHandler} required />
+          <label htmlFor="fullname">Full Name :</label>
+          <input type="text" id="fullname" name="fullname" autoComplete='off' value={user.fullname} placeholder='Full Name' onChange={inputHandler} required />
         </div>
 
         {/* Email */}
         <div className="inputGroup">
           <label htmlFor="email">Email :</label>
-          <input type="email" id="email" name="email" autoComplete='off' placeholder='Email' onChange={inputHandler} required />
+          <input type="email" id="email" name="email" autoComplete='off' value={user.email}  placeholder='Email' onChange={inputHandler} required />
         </div>
 
         {/* Mobile No */}
         <div className="inputGroup">
           <label htmlFor="mobileno">Mobile No</label>
-          <input type="number" id="mobileno" name="mobileno" autoComplete='off' placeholder='Mobile No' onChange={inputHandler} required />
+          <input type="number" id="mobileno" name="mobileno" autoComplete='off' value={user.mobileno}  placeholder='Mobile No' onChange={inputHandler} required />
         </div>
 
         {/* Designation */}
