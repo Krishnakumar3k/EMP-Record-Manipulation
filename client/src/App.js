@@ -17,7 +17,7 @@ function App() {
     },
     {
       path:"/edit/:id",
-      element: <Edit/>,
+      element: <Edit/>
     }
   ])
 
